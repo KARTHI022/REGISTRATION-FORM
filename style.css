@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+    --succes-color: #2ecc71;;
+    --error-color: #e74c3c;
+}
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: #f9fafb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 9px;
+    position: normal;
+}
+
+.form-control label{
+    color:#777;
+    display: block;
+    margin-bottom: 5px; 
+}
+ 
+.form-control input
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;   
+    justify-content: center;
+}
+
+.form-control input:{
+    outline: 0;
+    border-color: #777;
+
+}
+
+.form-control.success input {
+    border-color: var(--succes-color);
+    font-size: 14px;
+}
+
+.form-control.error input {
+    border-color: var(--error-color);  
+    padding-left: 60px;
+    
+
+
+
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    visibility: visible;
+   
+
+    
+}
+
+.form-control.error small{
+    visibility: visible;
+   
+
+}
+.form button {
+    cursor: pointer;
+    /* border-color: #db3434;
+    border: 2px solid #332a28; */
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin-top:20px;
+    width:100%;
+}
+
+
+
+
+.user-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-details img {
+    max-width: 100px;
+    border-radius: 200px;
+     visibility: visible;
+}
+/* Style for the image preview container */
+#imagePreview {
+    max-width: 100%;
+    max-height: 200px; /* Set the maximum height as needed */
+    margin-top: 10px;
+}
+
+/* Style for the error container */
+#errorContainer {
+    color: rgb(255, 8, 0);
+    margin-top: 0px;
+    font-size: 12px;
+   
+}
+
+
+
+
+.toggle-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form-control{
+    padding-left: 80px;
+}
+/* .form-text text-danger{
+    padding-left: 24px;
+   
+} */
